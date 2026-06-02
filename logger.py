@@ -15,3 +15,7 @@ class Logger:
         print(entry)
         with open(self.filename, "a", encoding="utf-8") as f:
             f.write(entry + "\n")
+
+    def clear(self) -> None:
+        """Очищает файл лога."""
+        open(self.filename, "w").close()
