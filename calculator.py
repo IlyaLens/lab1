@@ -4,8 +4,8 @@ class Calculator:
     """Простой калькулятор с базовыми операциями."""
 
     def add(self, a: float, b: float) -> float:
-        """Сложение двух чисел."""
-        return a + b
+        """Сложение двух чисел явно как float."""
+        return float(a + b)
 
     def subtract(self, a: float, b: float) -> float:
         """Вычитание двух чисел."""
