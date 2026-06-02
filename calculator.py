@@ -20,3 +20,7 @@ class Calculator:
         if b == 0:
             raise ValueError("Деление на ноль недопустимо")
         return a / b
+
+    def power(self, a: float, b: float) -> float:
+        """Возведение в степень."""
+        return a ** b
